@@ -1,0 +1,74 @@
+:root {
+	--mobile: 17px;
+}
+
+@media (max-width: 500px) {
+
+	blockquote > p {
+		font-size: inherit;
+		line-height: 1.5em;
+	}
+
+
+	body > main > header > nav {
+		margin: 0 50% 0 15%;
+		width: 35%;
+	}
+
+	body > main > header > div {
+		padding: 0 var(--mobile);
+	}
+	body > main > header > div:nth-child(1) > p {
+		writing-mode: vertical-lr;
+	}
+	[id*='banner-'] > nav > main {
+		justify-content: flex-start;
+	}
+	body > main > header > nav > menu {
+		justify-content: flex-start !important;
+	}
+	[id*='banner-'] > div:nth-child(1) > nav > menu > li > a {
+		margin: 0;
+		margin-left: var(--mobile);
+	}
+	body > footer {
+		background: linear-gradient(120deg, var(--dark), var(--dark) 50%, var(--clear) 50%);
+	}
+
+	main main {
+		padding-left: var(--mobile);
+		padding-right: var(--mobile);
+	}
+	main > article > div:nth-child(1) {
+		margin: 0;
+	}
+	main.alternator > article:nth-of-type(even) > div:nth-child(1) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.media-flex-column 	{
+		flex-direction: column !important;
+		justify-content: center;
+	}
+
+	.media-flex-column > div:nth-child(1) {
+		margin: var(--mobile) 0;
+	}
+	nav .project {
+		width: 100%;
+	}
+	.shokunin {
+		writing-mode: vertical-rl;
+	}
+
+	#skills > header {
+		width: 100%;
+	}
+	#skills figure {
+		width: 100%;
+	}
+
+	.spacer {
+		height: 10vh;
+	}
+}

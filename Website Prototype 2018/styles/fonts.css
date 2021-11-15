@@ -1,0 +1,79 @@
+
+@font-face {
+	font-family: 'Voga';
+	src: url('fonts/Voga.otf');
+	font-family: 'FiraMono-Regular';
+	src: url('fonts/FiraMono-Regular.otf');
+	font-family: 'Xthlx';
+	src: url('fonts/Xthlx.otf');
+	font-family: 'Didot';
+	src: url('fonts/Didot.ttc');
+}
+
+* {
+	font-family: 'FiraMono-Regular', courier;
+	font-size: 13px;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+}
+
+a {
+	color: hsl(0, 0%, 70%);
+	text-decoration: none;
+}
+
+body {
+	color: hsl(0, 0%, 70%);
+}
+
+.center {
+	text-align: center;
+}
+
+.common-number {
+	font-size: 144px;
+	font-style: italic;
+	line-height: 1;
+	opacity: 0.13;
+	position: absolute;
+	transform: translate(-140px, -250px) rotateZ(90deg)
+}
+
+h1 {
+	display: block;
+	font-family: Voga;
+	font-size: calc(5vw + 3vh);
+	text-transform: none;
+}
+
+h2, h3 {
+	font-family: /*BDR-mono*/;
+	font-size: 1.1em;
+	padding: 1em 0;
+
+}
+
+h1, h2, h3 {
+	letter-spacing: 0.1em;
+}
+
+.nav-main{
+	color: hsl(0, 0%, 50%);
+	transition: 0.5s color;
+	text-transform: none;
+}
+.nav-main:hover {
+	color: white;
+}
+
+.nav-tt li a h2 {
+	margin: 35px;
+}
+
+#shokunin-kishitsu {
+}
+
+ul {
+	list-style: none;
+}

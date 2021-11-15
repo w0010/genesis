@@ -1,0 +1,64 @@
+.data {
+	display: inline-block;
+	transform: translateY(35px) rotate(90deg);
+}
+.data p {
+	font-family: 'BDR-mono-light', 'Fira-Mono', monospace;
+	color: var(--moodDim);
+	font-size: 10px;
+	letter-spacing: 0em;
+	line-height: 1.1em;
+	margin: initial;
+}
+
+.max-max {
+	background: hsla(0,0%,50%,0.75);
+}
+.max-mid {
+	background: linear-gradient(-90deg, hsla(0,0%,50%,0.75) 0%, hsla(0,0%,50%,0.75) 66.6%, hsla(0,0%,50%,0) 66.6%);
+}
+.max-min {
+	background: linear-gradient(-90deg, hsla(0,0%,50%,0.75) 0%, hsla(0,0%,50%,0.75) 33.3%, hsla(0,0%,50%,0) 33.3%);
+
+}
+
+.mid-max {
+	background: hsla(0,0%,30%,0.75);
+}
+.mid-mid {
+	background: linear-gradient(-90deg, hsla(0,0%,30%,0.75), hsla(0,0%,30%,0.75) 66.6%, hsla(0,0%,30%,0) 66.6%);
+}
+.mid-min {
+	background: linear-gradient(-90deg, hsla(0,0%,30%,0.75), hsla(0,0%,30%,0.75) 33.3%, hsla(0,0%,30%,0) 33.3%);
+}
+
+.min-max {
+	background: hsla(0,0%,15%,0.75);	
+}
+.min-mid {
+	background: linear-gradient(-90deg, hsla(0,0%,15%,0.75), hsla(0,0%,15%,0.75) 66.6%, hsla(0,0%,15%,0) 66.6%);
+}
+.min-min {
+	background: linear-gradient(-90deg, hsla(0,0%,15%,0.75), hsla(0,0%,15%,0.75) 33.3%, hsla(0,0%,15%,0) 33.3%);
+}
+
+
+#skills > header {
+	width: 45%;
+}
+#skills figure {
+	width: 50%;
+}
+
+
+.skill-bar {
+	height: calc(1.5vw + 2em);
+	margin: 1em auto;
+	text-align: right;
+}
+.skill-bar p {
+	font-family: 'BDR-mono-bold', 'Fira-Mono', monospace;
+	font-size: 17px;
+	padding-right: 2rem;
+	text-transform: uppercase;
+}

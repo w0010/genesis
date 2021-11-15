@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;/*for ul*/
+}
+
+body {
+	background: hsl(0, 0%, 11%);
+	overflow-x: hidden;
+}
+
+#bg {
+	position: fixed;
+	top: 0;
+	z-index: -1;
+}
+
+footer .core {
+	align-items: center;
+	background-color: var(--smoke);
+	border: hsla(0, 0%, 70%, 0.05) 24px outset;
+	border-radius: 50%;
+	display: flex;
+	height: calc(13vh + 10vw);
+	justify-content: center;
+	margin: 17px 40px;
+	width: calc(13vh + 10vw);
+}
+footer #core-container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 95vh;
+}
+footer #core-container div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+footer .project {
+	background-attachment: fixed;
+
+	background-position: center;
+	border-left: var(--smoke) 3rem solid;
+	border-right: var(--lux) 1rem solid;
+	height: calc(15vw + 70px);
+	margin: calc(2vw + 10px);
+	margin-left: 30vw;
+	margin-right: 15vw;
+	opacity: 0.75;
+	transition: var(--trans);
+	width: 60vw;
+}
+footer .project:hover {
+	border-left: var(--clear) 0rem solid;
+	border-right: var(--clear) 0rem solid;
+	width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	opacity: 1;
+}
+footer #blade {
+	background-image: url('../images/dark/d-seraph-a.jpg');
+}
+footer #wall {
+	background-image: url('../images/dark/d-wall.jpg');
+}
+footer #spine {
+	background-image: url('../images/dark/d-spine.jpg');
+}
+footer #full {
+		background-image: url('../images/dark/d-ouroboros.jpg');
+}
+footer #project-container {
+	align-items: center;
+	background: var(--dark);
+	border-bottom: hsla(0, 0%, 70%, 0.3) 1px solid;
+	display: flex;
+	flex-direction: column;
+	padding: 20vh 0;
+}
+footer #project-container > li > a > h2 {
+	left: 2vw;
+	position: absolute;
+	padding: calc(1vw + 1.5vh) calc(5vw + 1.5vh) calc(1vw + 1.5vh) calc(1vw + 1.5vh);
+	z-index: 1;
+}
+footer #project-container > li > a > h2:after {
+	background: var(--lux);
+	content: '';
+	display: block;
+	height: 1px;
+	margin-left:50%;
+	margin-top: 1rem;
+	opacity: 0.5;
+	transition: var(--trans);
+	width: 75%;
+}
+footer #project-container > li > a:hover > h2:after {
+	margin-left: 0px;
+	opacity: 1;
+	width: 100%;
+}
+
+.glass {
+	background-color: var(--smoke);
+}
+/*.glass*/.window {
+	border: hsla(0, 0%, 70%, 0.2) 1px outset;
+	border-top: hsla(0, 0%, 70%, 0.3) 10px outset;
+}
+
+#socket {
+	height: 120px;
+	position: absolute;
+	width: 100vw;
+	z-index: 100;
+	transform: translateY(-60px);
+}
+
+
+.window:before {
+	background: linear-gradient(to bottom right, hsla(0, 0%, 70%, 0.9), hsla(0, 0%, 70%, 0.9) 50%, hsla(0, 0%, 70%, 0) 50%);
+	content:'';
+	display: block;
+	height: 1em;
+	opacity: 0.8;
+	margin-right: 0.5em;
+	width: 1em;
+}
+
+
+
+
